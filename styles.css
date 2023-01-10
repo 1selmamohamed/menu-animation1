@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+
+.bar-1,
+.bar-2,
+.bar-3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(249, 241, 241);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(245, 146, 96, 0.63);
+}
+
+.menu-icon { 
+display: inline-block;
+cursor: pointer;
+}
+
+
+.change .bar-1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar-2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar-3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
